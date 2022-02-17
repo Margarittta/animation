@@ -1,0 +1,64 @@
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../дз09_3/nature-849629_960_720.jpg);
+    background-repeat:no-repeat ;
+    background-size: 100%;
+}
+
+.img {
+    animation: img 15s infinite alternate; /*анімація "виїжджає" спочатку вперед-назад і безкінечно*/
+    position: relative;
+    width: 270px;
+    height: 120px;
+}
+
+    @keyframes img { 
+    from {
+        left: 0px;             
+    }
+    to {
+        left: calc(100% - 50px); 
+    }
+}
+
+.sun {  
+         
+    position: relative;     
+    width: 370px;
+    height: 120px;
+    animation: sun 15s  infinite; /*анімація спрацьовує кожні 15сек та безкінечно*/  
+}
+
+    @keyframes sun {
+    10% {
+        transform: rotate(0);
+             
+    }
+    50% {
+        transform: rotate(1turn); /*анімація робить коло навколо себе лише 1 раз*/ 
+             
+    }
+    100% {
+        transform: rotate(1turn);
+              
+    }
+}
+
+    
+.pic {
+    position: relative;
+    animation: pic 3s normal;  /*анімація "виїжджає"за 3сек і залишається на місці*/
+}
+
+    @keyframes pic {  
+    from {right: 300px;}
+    to {right: 0px;}
+}
+
+    
+
+ 
